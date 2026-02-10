@@ -1,24 +1,24 @@
-alert("Boas vindas ao jogo do numero secreto!");
-let numeroSecreto = 5;
-console.log(numeroSecreto);
-let chute;
-let tentativas = 1;
+// alert("Boas vindas ao jogo do numero secreto!");
+// let numeroSecreto = 5;
+// console.log(numeroSecreto);
+// let chute;
+// let tentativas = 1;
 
-while (chute != numeroSecreto){
-    chute = prompt("Escolha um numero de 1 a 10");
+// while (chute != numeroSecreto){
+//     chute = prompt("Escolha um numero de 1 a 10");
 
-    if (chute == numeroSecreto){
-        alert("Voce acertou! O numero secreto é " + numeroSecreto + " com " + tentativas + " tentativa(s)");
-    } else{
-        // alert("Vc errou o numero, recarregue a pagina e tente novamente");
-        if (chute >  numeroSecreto){
-            alert("O numero secreto é menor que " + chute);
-        } else{
-            alert("O numero secreto é maior que " + chute);
-        }
-        tentativas++
-    }
-}
+//     if (chute == numeroSecreto){
+//         alert("Voce acertou! O numero secreto é " + numeroSecreto + " com " + tentativas + " tentativa(s)");
+//     } else{
+//         // alert("Vc errou o numero, recarregue a pagina e tente novamente");
+//         if (chute >  numeroSecreto){
+//             alert("O numero secreto é menor que " + chute);
+//         } else{
+//             alert("O numero secreto é maior que " + chute);
+//         }
+//         tentativas++
+//     }
+// }
 
 // alert("Boas vindas ao nosso site!");
 
@@ -69,3 +69,27 @@ while (chute != numeroSecreto){
 // let nome = prompt("Digite o seu nome")
 
 // alert("Boas vindas "+nome+"!")
+
+// let contador = 1;
+
+// while (contador <= 10){
+//     console.log(contador);
+//     contador++;
+// }
+
+
+// let contador = 10;
+
+// while (contador >= 0){
+//     console.log(contador);
+//     contador--;
+// }
+
+
+// let numMaximo = prompt("Digite o numero maximo do contador")
+// let contador = 0
+
+// while (contador <= numMaximo ){
+//     console.log("Contagem progressiva " + contador);
+//     contador++;
+// }
