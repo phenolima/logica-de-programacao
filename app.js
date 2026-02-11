@@ -1,24 +1,30 @@
-// alert("Boas vindas ao jogo do numero secreto!");
+alert("Boas vindas ao jogo do numero secreto!");
 // let numeroSecreto = 5;
-// console.log(numeroSecreto);
-// let chute;
-// let tentativas = 1;
+let numeroSecreto = parseInt(Math.random() * 100 + 1)
+console.log(numeroSecreto);
+let chute;
+let tentativas = 1;
 
-// while (chute != numeroSecreto){
-//     chute = prompt("Escolha um numero de 1 a 10");
+while (chute != numeroSecreto){
+    chute = prompt("Escolha um numero de 1 a 100");
 
-//     if (chute == numeroSecreto){
-//         alert("Voce acertou! O numero secreto é " + numeroSecreto + " com " + tentativas + " tentativa(s)");
-//     } else{
-//         // alert("Vc errou o numero, recarregue a pagina e tente novamente");
-//         if (chute >  numeroSecreto){
-//             alert("O numero secreto é menor que " + chute);
-//         } else{
-//             alert("O numero secreto é maior que " + chute);
-//         }
-//         tentativas++
-//     }
-// }
+    if (chute == numeroSecreto){
+        break;
+        // alert("Voce acertou! O numero secreto é " + numeroSecreto + " com " + tentativas + " tentativa(s)");
+    } else{
+        // alert("Vc errou o numero, recarregue a pagina e tente novamente");
+        if (chute >  numeroSecreto){
+            alert("O numero secreto é menor que " + chute);
+        } else{
+            alert("O numero secreto é maior que " + chute);
+        }
+        tentativas++
+    }
+}
+
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa'; // Isso é um operador ternario
+alert("Voce acertou! O numero secreto é " + numeroSecreto + " com " + tentativas + " " + palavraTentativa);
+
 
 // alert("Boas vindas ao nosso site!");
 
@@ -93,3 +99,58 @@
 //     console.log("Contagem progressiva " + contador);
 //     contador++;
 // }
+
+
+// console.log("Boas vindas!!!");
+// let nome = "Pedro Henrique";
+// console.log("Olá, "+ nome);
+// alert("Olá, "+ nome);
+
+// let linguagemProgramacao = prompt("Qual a linguagem de programacao vc masis gosta?");
+// console.log("A linguagem de programacao preferida do " + nome + " é " +linguagemProgramacao);
+
+// let valor1 = 50;
+// let valor2 = 40;
+
+// resultadoSoma = (valor1 + valor2);
+// resultadoSub = (valor1 - valor2);
+
+// console.log(`O resultado da soma de ${valor1} e ${valor2} é ${resultadoSoma}`);
+// console.log(`O resultado da subtracao de ${valor1} e ${valor2} é ${resultadoSub}`);
+
+
+// let idade = prompt("Qual a sua idade?");
+
+// if (idade >= 18){
+//     alert("Vc ja é maior de idade");
+// }else{
+//     alert("vc ainda é menor de idade");
+// }
+
+// let numero = prompt("digite um numero");
+
+// if (numero > 0) {
+//     console.log("O numero digotado é positivo")
+// }else if (numero == 0){
+//     console.log("O numero digitado é zero")
+// }else{
+//     console.log("O numero digirado é negativo")
+// }
+
+// let numero = 1;
+// while (numero <= 10){
+//     console.log(numero);
+//     numero++;
+// }
+
+// let nota = prompt("Digite a sua nota");
+// let resultado = nota >= 7 ? "Aprovado" : "reprovado";
+// console.log(`Vc foi ${resultado}`)
+
+// let numero = parseInt(Math.random())
+// let numero = Math.random()
+// console.log(`O numero aleatorio é: ${numero}`)
+
+
+// let numero = parseInt(Math.random() * 1000 + 1)
+// console.log(`O numero aleatorio é: ${numero}`)
