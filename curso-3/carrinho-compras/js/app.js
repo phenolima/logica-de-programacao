@@ -10,16 +10,17 @@ function adicionar() {
     let listaProdutos = document.getElementById('lista-produtos')
     let valorTotal = document.getElementById('valor-total');
     let calculoValorTotal = quantidadeProduto * valorUnitarioProduto;
-     
-    totalGeral = totalGeral + calculoValorTotal;
 
-    valorTotal.innerHTML = `R$${totalGeral}`;
-
-    listaProdutos.innerHTML = listaProdutos.innerHTML + `<section class="carrinho__produtos__produto">
-    <span class="texto-azul">${quantidadeProduto}x</span> ${nomeProduto} <span class="texto-azul">R$ ${valorUnitarioProduto}</span>
-    </section>`
-
-    document.getElementById('quantidade').value = '';
+    if (quantidadeProduto <= 0) {
+        alert('Por favor, digite a quantidade do item que você deseja adicioanar no carrinho');
+    } else {
+        totalGeral = totalGeral + calculoValorTotal;
+        valorTotal.innerHTML = `R$${totalGeral}`;
+        listaProdutos.innerHTML = listaProdutos.innerHTML + `<section class="carrinho__produtos__produto">
+        <span class="texto-azul">${quantidadeProduto}x</span> ${nomeProduto} <span class="texto-azul">R$ ${valorUnitarioProduto}</span>
+        </section>`
+        document.getElementById('quantidade').value = '';
+    }
 }
 
 function limpar() {
